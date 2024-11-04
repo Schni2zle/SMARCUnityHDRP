@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2156.8342, g: 2260.009, b: 3280.5088, a: 1}
+  m_IndirectSpecularColor: {r: 2156.7896, g: 2260.0042, b: 3280.4062, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17323,6 +17323,11 @@ PrefabInstance:
       propertyPath: senderObject
       value: 
       objectReference: {fileID: 895326091}
+    - target: {fileID: 4980747270019049236, guid: b2f9c349e7f9f430eae6dba87f83d39d,
+        type: 3}
+      propertyPath: topic
+      value: core/fpcamera/cam_info
+      objectReference: {fileID: 0}
     - target: {fileID: 8826866181995455972, guid: b2f9c349e7f9f430eae6dba87f83d39d,
         type: 3}
       propertyPath: AUVTransform
