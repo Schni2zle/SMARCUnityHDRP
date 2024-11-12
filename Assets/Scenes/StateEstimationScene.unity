@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2156.7896, g: 2260.0042, b: 3280.4062, a: 1}
+  m_IndirectSpecularColor: {r: 2156.827, g: 2260.0037, b: 3280.5105, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -533,14 +533,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 36265545}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &36265548
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -797,15 +796,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 742832762}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &44200255
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1173,14 +1183,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 61394766}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &61394769
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1401,14 +1410,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 67317296}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &67317299
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1617,15 +1625,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1856489656}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &136908448
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2308,14 +2327,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 164344946}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &164344949
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2572,15 +2590,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1393805005}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &247357381
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2701,15 +2730,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 61394765}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &253745304
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2864,15 +2904,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 164344945}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &258970197
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3123,14 +3174,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 296143290}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &296143293
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3304,15 +3354,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 36265544}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &311356616
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3682,15 +3743,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 296143289}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &355162360
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4445,15 +4517,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1068532119}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &441725430
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4574,15 +4657,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1410898266}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &460420408
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4833,14 +4927,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 478887677}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &478887680
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5014,15 +5107,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 164344945}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &531432114
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5273,14 +5377,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 537509229}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &537509232
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5846,15 +5949,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 2007708265}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &546779028
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6188,14 +6302,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 576694802}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &576694805
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6490,15 +6603,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1469356539}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &667781510
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6619,15 +6743,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 296143289}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &680446662
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6748,15 +6883,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 478887676}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &715899128
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7007,14 +7153,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 742832763}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &742832766
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7105,15 +7250,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1469356539}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &762664178
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7434,15 +7590,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 61394765}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &837163712
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7563,15 +7730,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1068532119}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &856083092
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7692,15 +7870,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 537509228}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &864124297
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7821,15 +8010,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 742832762}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &865840785
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7956,15 +8156,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 67317295}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &886484234
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8097,15 +8308,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1100235598}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &898170806
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8592,15 +8814,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1568239827}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1055261093
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8934,14 +9167,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 1068532120}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &1068532123
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9032,15 +9264,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1102191422}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1076771845
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9291,14 +9534,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 1100235599}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &1100235602
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9519,14 +9761,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 1102191423}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &1102191426
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9830,14 +10071,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 1114738215}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &1114738218
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9928,15 +10168,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 478887676}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1137378988
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10257,15 +10508,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1856489656}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1237766515
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10469,15 +10731,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1568239827}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1247849932
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10598,15 +10871,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1365487105}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1250276212
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10893,15 +11177,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 67317295}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1304223104
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11389,14 +11684,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 1365487106}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &1365487109
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11734,14 +12028,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 1393805006}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &1393805009
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12045,14 +12338,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 1410898267}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &1410898270
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12309,15 +12601,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1114738214}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1448244327
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12568,14 +12871,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 1469356540}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &1469356543
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12805,15 +13107,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 2007708265}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1551772644
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12934,15 +13247,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1365487105}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1552383309
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13193,14 +13517,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 1568239828}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &1568239831
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13623,15 +13946,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1719591355}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1602196580
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13918,15 +14252,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1993457430}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.001
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1656781721
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14782,14 +15127,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 1719591356}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &1719591359
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14880,15 +15224,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 576694801}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1733257428
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15009,15 +15364,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1410898266}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1735505981
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15304,15 +15670,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1393805005}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1820248822
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15763,14 +16140,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 1856489657}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &1856489660
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15929,15 +16305,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1100235598}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1877627673
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16058,15 +16445,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1102191422}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &1887101699
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16701,14 +17099,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 1
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.001
-  ropeJoint: {fileID: 1993457431}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &1993457434
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -16911,14 +17308,13 @@ MonoBehaviour:
   damper: 0.5
   maximumForce: 5000
   generator: {fileID: 1362016949}
-  isBuoy: 0
   ropeDiameter: 0.01
   ropeCollisionDiameter: 0.1
   segmentLength: 0.1
-  segmentRigidbodyMass: 0.12012
-  segmentGravityMass: 0.000050000002
-  ropeJoint: {fileID: 2007708266}
-  hookJoint: {fileID: 0}
+  segmentMass: 0
+  linkJoint: {fileID: 0}
+  firstSegmentTransform: {fileID: 0}
+  lastSegmentTransform: {fileID: 0}
 --- !u!136 &2007708269
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -17009,15 +17405,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1719591355}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &2009958196
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17186,15 +17593,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 537509228}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &2015993035
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17323,11 +17741,6 @@ PrefabInstance:
       propertyPath: senderObject
       value: 
       objectReference: {fileID: 895326091}
-    - target: {fileID: 4980747270019049236, guid: b2f9c349e7f9f430eae6dba87f83d39d,
-        type: 3}
-      propertyPath: topic
-      value: core/fpcamera/cam_info
-      objectReference: {fileID: 0}
     - target: {fileID: 8826866181995455972, guid: b2f9c349e7f9f430eae6dba87f83d39d,
         type: 3}
       propertyPath: AUVTransform
@@ -17592,15 +18005,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1993457430}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.001
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &2071420042
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18004,15 +18428,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 1114738214}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &2100374764
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18216,15 +18651,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 36265544}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &2124993963
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18345,15 +18791,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectedArticulationBody: {fileID: 0}
   ConnectedRigidbody: {fileID: 576694801}
-  volumeObject: {fileID: 0}
-  volumeMesh: {fileID: 0}
-  volume: 0.000001
+  VolumeObject: {fileID: 0}
+  VolumeMesh: {fileID: 0}
+  Volume: 0
   WaterDensity: 997
-  depthBeforeSubmerged: 0.01
-  addGravity: 1
-  automaticCenterOfGravity: 0
-  mass: 0.000050000002
-  drawForces: 1
+  DepthBeforeSubmerged: 0.03
+  MaxBuoyancyForce: 1000
+  UnderwaterDrag: -1
+  UnderwaterAngularDrag: -1
+  AirDrag: -1
+  AirAngularDrag: -1
+  IsUnderwater: 0
+  AddGravity: 0
+  AutomaticCenterOfGravity: 0
+  Mass: 0
+  DrawForces: 0
+  GizmoSize: 0
+  AppliedBuoyancyForce: 0
+  AppliedGravityForce: 0
+  ApplyCustomForce: 0
+  CustomForce: {x: 0, y: 0, z: 0}
 --- !u!135 &2130010514
 SphereCollider:
   m_ObjectHideFlags: 0
